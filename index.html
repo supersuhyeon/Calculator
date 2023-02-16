@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+    <script src="./main.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <input class="inp" disabled value="0" id="top-input">
+    </div>
+    
+    <div class="row">
+        <div class="btn" onclick="inputNum(7)">7</div>
+        <div class="btn" onclick="inputNum(8)" >8</div>
+        <div class="btn" onclick="inputNum(9)">9</div>
+        <div class="btn total" onclick="inputEqual()">=</div>
+    </div>
+
+    <div class="row">
+        <div class="btn" onclick="inputNum(4)">4</div>
+        <div class="btn" onclick="inputNum(5)">5</div>
+        <div class="btn" onclick="inputNum(6)">6</div>
+        <div class="btn" onclick="inputOperator('+')">+</div>
+    </div>
+
+    <div class="row">
+        <div class="btn" onclick="inputNum(1)">1</div>
+        <div class="btn" onclick="inputNum(2)">2</div>
+        <div class="btn" onclick="inputNum(3)">3</div>
+        <div class="btn" onclick="inputOperator('-')">-</div>
+    </div>
+
+    <div class="row">
+        <div class="btn btn-lg" onclick="inputNum(0)">0</div>
+        <div class="btn" onclick="inputOperator('/')">/</div>
+        <div class="btn" onclick="inputOperator('*')">*</div>
+    </div>
+    
+    <div class="row replay" id="replay">
+        <div class="material-icons">replay</div>
+    </div>
+</div>
+</body>
+</html>
